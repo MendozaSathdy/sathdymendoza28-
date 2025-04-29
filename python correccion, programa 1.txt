@@ -1,0 +1,24 @@
+numero = int(input("Ingrese un número entero: ")) # Error 4: tipo de dato se pone el tipo entero "int"
+if numero % 2 == 0:      # Error 1: de sintaxis, le faltaba (:)
+    print("El número es par.") 
+else: 
+    print("El número es impar.") 
+
+   
+
+cantidad = int(input("¿Cuántos números pares desea ver?: ")) 
+
+contador = 0 
+
+i = 1 
+
+while contador < cantidad:   # Error 2: de sintaxis (falta ':') 
+    if i % 2 == 0: 
+        print(f"Par número {contador+ i }: {i}")  # Error 3: de tipo al concatenar , no estaba bien ubicado al momento de imprimir 
+        contador += 1 
+    i += 1    
+    
+# errores que se ven
+#1. la sintaxis estaba mal formada en cada linea , los espacios en cada parte 
+#2. falta de signos de puntuación 
+
